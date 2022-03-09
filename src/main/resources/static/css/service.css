@@ -1,0 +1,233 @@
+ /* Global css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+   padding-top: 56px;
+}
+
+/* Navbar css */
+/* .company-name{
+    font-size: 1.5rem;
+}
+li{
+   margin: 0 .5rem;
+   padding: 0 1rem;
+}
+
+li a:hover{
+   font-weight: bold;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+li a.active{
+   font-weight: bold;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} */
+
+/* Our services css */
+.category-content{
+   max-width: 1000px;
+   margin: 3rem auto;
+}
+
+.carousel-item {
+   height: 500px;
+}
+
+.carousel-caption {
+   top: 20%;
+   max-width: 400px;
+   text-align: left;
+}
+
+.carousel-caption > h1 {
+   font-family: "Playfair Display", serif;
+   font-weight: 900;
+   font-style: italic;
+}
+
+.card{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+   box-shadow: 5px 6px 6px 2px #e9ecef;
+   transform: scale(1.1);
+   color: #01730d;
+}
+
+.card-body {
+   text-align: center;
+}
+
+.section-featured {
+   margin: 60px 30px;
+   width: auto;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.section-featured > .container-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.container-item > i {
+   font-size: 2.5rem;
+   color: #01730d;
+}
+
+.section-contact {
+   display: flex;
+   justify-content: right;
+   margin-bottom: 60px;
+   height: auto;
+}
+
+.contactDesc  {
+   width: 50%;
+   padding: 0 24px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: whitesmoke;
+}
+
+.section-contact > img {
+   width: 50%;
+}
+
+#contactBtn > a {
+   text-decoration: none;
+   color: white;
+}
+
+/* Modal Box css */
+.serviceImg, .serviceDetail {
+   flex-basis: 50%;
+}
+
+.serviceDetail {
+   margin-left: 10px;
+}
+
+.serviceDetail label {
+   font-size: 18px;
+}
+
+#datepicker {
+   margin: 0;   
+}
+
+#datepicker > [class^=col-lg] {
+   padding: 0;
+}
+
+/* Footer css */
+/* .footer{
+   background-color: whitesmoke;
+   padding: 1rem 0;
+   margin-top: 1rem;
+   box-shadow: 0 4px 8px 0;
+}
+.socialMedia a{
+   font-size: 1.5rem;
+}
+
+.footer-link{
+   display: flex;
+   justify-content: center;
+}
+
+.footer-link a:not(:last-child){
+   margin-right: 2rem;
+}
+
+.footer-link a:hover{
+   font-weight: bold;
+   color: #000;
+} */
+
+/* Responsive css */
+@media screen and (max-width: 1228px) {
+
+}
+
+@media screen and (max-width: 1068px) {
+   
+   .serviceInfo {
+      display: none;
+   }
+   
+}
+
+@media screen and (max-width: 968px) {
+
+   #carouselService {
+      display: none;
+   }
+
+   .container-item > p {
+      display: none;
+   }
+
+   .contactDesc  {
+      width: 100%;
+      background-color: white;
+   }
+
+   .section-contact > img {
+      display: none;
+   }
+
+   .contactDesc > h2 {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 768px) {  
+
+   .section-featured {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 576px) {  
+
+   .serviceImg {
+      display: none;
+   }
+
+}
+
+
+@media screen and (max-width: 375px) {  
+
+}
+
+
+
+
+

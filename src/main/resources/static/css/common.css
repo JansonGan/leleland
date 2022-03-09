@@ -1,0 +1,62 @@
+/* Navbar css */
+.company-name{
+    font-size: 1.5rem;
+}
+
+#logoPic {
+    height: 20px;
+}
+li{
+   margin: 0 .5rem;
+   padding: 0 1rem;
+}
+
+li a:hover{
+   font-weight: bold;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: #01730d;
+   color: #fff!important;
+   border-radius: 5px;
+}
+li a.active{
+   font-weight: bold;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: #01730d;
+   color: #fff!important;
+   border-radius: 5px;
+}
+
+.navbar{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Footer css */
+.footer{
+    background-color: whitesmoke;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0;
+}
+.socialMedia a{
+    font-size: 1.5rem;
+    color: #006903;
+}
+
+.socialMedia a:hover {
+    color: #074709;
+    font-weight: bold;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link a:not(:last-child){
+    margin-right: 2rem;
+}
+
+.footer-link a:hover{
+    font-weight: bold;
+    color: #000;
+}

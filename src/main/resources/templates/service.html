@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--fontawesomw-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <title>Services</title>
+  </head>
+  <body>
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="" class="navbar-brand company-name"><i class="fas fa-paw"></i><img src="./images/logo leleland-2.png" alt="Logo" id="logoPic"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" aria-current="page" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active px-3" aria-current="page" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" aria-current="page" href="form-login.html">Form</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End of Navigation Bar -->
+    </header>
+
+    <main>
+    <!-- Carousel section -->
+    <div id="carouselService" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="images/home-service-1.jpeg" class="d-block w-100" alt="Service Background 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Various Pet Services</h1>
+                <p>Discover a variety of pet services that suits every pet's preference and lifestyle.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="images/home-service-2.jpeg" class="d-block w-100" alt="Service Background 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Crafted with Care</h1>
+                <span>Our team takes time to provide gentle,</span> 
+                <span>loving care in a stress-free, soothing environment for your pet.</span>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselService" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselService" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End of Carousel section -->
+
+    <!-- Service Section -->
+    <div class="container-fluid">    
+        <section class="section-featured container-fluid">
+            <div class="container-item">
+                <i class="bi bi-house-heart"></i>
+                <h4>Pet Home</h4>
+                <p>Place for pets to stay while you're away!</p>
+            </div>
+            <div class="container-item">
+                <i class="bi bi-people"></i>
+                <h4>Experienced team</h4>
+                <p>Pet care and wellness that's one step ahead.</p>
+            </div>
+            <div class="container-item">
+                <i class="bi bi-scissors"></i>
+                <h4>Pet Grooming</h4>
+                <p>Making pets looks great is our passion!</p>
+            </div>
+        </section>
+
+        <div class="category-content">
+            <div class="ourService">
+                <h1 class="text-center mb-4">Our Services</h1>
+            </div>
+            <div id="serviceRow" class="row">
+                <!-- Dynamically generated by JS -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End of Service Section -->
+
+    <!-- Modal Box for Service -->
+    <div id="serviceModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <div class="serviceImg">
+                    <img id="itemImage" class="img-fluid" src="images/service_1.jpg" alt="Service Image">
+                </div>
+                <form class="serviceDetail" onSubmit="event.preventDefault(); serviceReservation();">
+                    <div>
+                        <h3 id="itemName" class="text-center">Service 1</h2>
+                        <h5 id="itemPrice" class="text-center">from $20</h4>
+                        <p id="itemDescription" class="serviceInfo text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut et excepturi, veniam, earum modi rem, quisquam cumque beatae similique voluptatum voluptates quasi provident itaque! Soluta dolor temporibus accusamus aperiam!</p>
+                        <p>
+                            <label for="petType">Pet Type</label>
+                            <select class="form-select" id="petType" required>
+                                <option value="">Choose your pet type</option>
+                                <option value="1">Dog</option>
+                                <option value="2">Cat</option>
+                                <option value="3">Rabbit</option>
+                                <option value="4">Guinea Pig</option>
+                            </select>
+                        </p>
+                        <form>
+                            <label for="apptDate">Booking Slot</label>
+                            <div class="row input-group" id="datepicker">
+                                <div class="col-lg-6">
+                                    <input type="date" class="form-control" id="apptDate" required/>
+                                </div>
+                                <div class="col-lg">
+                                    <select class="form-select" id="apptTime" required>
+                                        <!-- Hour Option generated by JS -->
+                                    </select>
+                                </div>  
+                            </div>
+                        </form>
+                        
+                        <div class="container text-center mt-4">
+                            <button type="submit" class="btn btn-success" id="submitBtn">Confirm Booking</button>
+                        </div>
+                    </div>
+                </form>
+     
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!-- End of Modal Box for Service -->
+    </main>
+
+    <!-- Contact Us section -->
+    <section class="section-contact">
+        <img src="images/contact-us.jpeg" alt="Contact Us"> 
+        <div class="contactDesc">
+            <h2>Get in touch with us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel minus porro voluptatum repellendus.</p>
+            <button id="contactBtn" type="button" class="btn btn-success btn-lg rounded-0"><a href="contactUs.html">Contact Us</a></button>         
+        </div>
+    </section>
+    <!-- End of Contact Us section -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <!--Social media icon-->
+            <section class="socialMedia">
+                <p>Find us on social media</p>
+                <a href="#" class="btn btn-link btn floating btn-lg"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="btn btn-link btn floating btn-lg"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn btn-link btn floating btn-lg"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="btn btn-link btn floating btn-lg"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="btn btn-link btn floating btn-lg"><i class="fab fa-youtube"></i></a>
+            </section>
+        </div>
+
+        <!-- Webpage link -->
+        <div class="footer-link">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="contactUs.html">Contact Us</a>
+        </div>
+
+        <!--Copyright-->
+        <div class="footer p-2">
+            &copy 2022 Copyright All Rights Reserves <a href="index.html"
+                style="text-decoration: none; color: black;">LeleLand</a>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Service Javascript -->
+    <script src="js/serviceController.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/bookingForm.js"></script>
+  </body>
+</html>

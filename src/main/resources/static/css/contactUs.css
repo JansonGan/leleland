@@ -1,0 +1,147 @@
+/* Global CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+p {
+    margin: 0;
+}
+
+/* Top section CSS */
+#topHeader {
+    background-color: #368B85;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+#contact {
+    margin: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Second section CSS */
+#location>p,
+#contactNumber>p,
+#email>p {
+    text-align: center;
+}
+
+#contactIcon {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+#enquiries {
+    margin: 5rem 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 63, 63);
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+#services, #wellness, #business {
+    flex:auto;
+}
+
+/* Third section CSS */
+.asterisk {
+    color: red;
+}
+
+#alert {
+    display: none;
+}
+
+#contactForm {
+    background-color: #e3e4e4;
+    padding: 2rem 0;
+    margin: 5rem 0;
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 60%;
+}
+
+#form {
+    width: 100%;
+    padding: 1rem;
+}
+
+#formImage {
+    width: 100%;
+    background-image: url("/images/dog-02.jpg");
+    background-size: cover;
+    padding: 1rem;
+}
+
+#character {
+    float: right;
+}
+
+/* Responsive CSS */
+@media (max-width: 1068px) {
+    #formContainer {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+
+    #enquiries,
+    #contact {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #location>p,
+    #contactNumber>p,
+    #email>p {
+        text-align: center;
+    }
+
+    #contactIcon {
+        margin-top: 1.5rem;
+    }
+
+    #services>h5,
+    #wellness>h5,
+    #business>h5 {
+        margin-top: 2rem;
+    }
+
+    #enquiries {
+        background-color: rgb(29, 63, 63);
+        margin-top: 2rem;
+        padding: 2rem 0;
+    }
+
+    #contact {
+        margin-top: 3rem;;
+    }
+
+    #formContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #form {
+        width: 100%;
+    }
+    
+    #formImage {
+        background-image: none;
+    }
+}
