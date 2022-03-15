@@ -1,0 +1,58 @@
+main {
+    padding-top: 70px;
+}
+
+.card {
+    border-bottom-right-radius: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #fff,
+    0.1rem 0.1rem 0.3rem #868686;
+ }
+
+.bgimage {    
+    background-image: url(../images/jamie-street-s9Tf1eBDFqw-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    min-height: 438px ;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.text-box {
+    position: relative;
+    max-width: 950px;
+    margin-top: 25px;
+    padding: 36px;
+    border-bottom-right-radius: 20px;
+    background: rgba(255,255, 255, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.text-box h2 {
+    text-align: center;
+}
+
+.bbtn {
+    box-shadow: -0.1rem -0.1rem 0.2rem #fff,
+                0.1rem 0.1rem 0.2rem #868686;  
+    margin: 0.4rem;
+    border-radius: 50%;
+}
+
+.bbtn:hover {
+    box-shadow: inset -0.1rem -0.1rem 0.2rem #fff,
+                inset 0.1rem 0.1rem 0.2rem #868686;  
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
